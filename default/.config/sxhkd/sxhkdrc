@@ -18,8 +18,8 @@ super + {_,shift + }w
 # Misc #
 ################
 # Show help
-super + slash
-    sxhkd-helpoooo
+super + shift + h
+    $HOME/.config/sxhkd/sxhkd-help.sh
 # Lock screen
 super + BackSpace
     slock

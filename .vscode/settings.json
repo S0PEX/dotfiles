@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "sxhkd",
         "install",
-        "vscode"
+        "vscode",
+        "bspwm"
     ]
 }

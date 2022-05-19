@@ -1,0 +1,67 @@
+################
+# Quick launch #
+################
+# Rofi
+super + @space
+    rofi -show run
+# Terminal
+super + Return
+    st
+# File explorer
+super + e
+    pcmanfm
+# Web browser
+super + {_,shift + }w
+    firefox {_,--private-window}
+
+################
+# Misc #
+################
+# Show help
+super + slash
+    sxhkd-helpoooo
+# Lock screen
+super + BackSpace
+    slock
+# Reload sxhkdrc
+super + shift + r
+    pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+###########
+# Windows #
+###########
+
+# Rotate tree
+super + shift + {d,a}
+    bspc node @/ -C {forward,backward}
+# Close or kill window
+super + shift + {_,ctrl + }q
+    bspc node -{c,k}
+# Focus or swap window in the current workspace
+super + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
+# Focus the given workspace or move window to that workspace
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f, node -d} '^{1-9,10}'
+# Focus the next/previous window
+super + {_,shift + }grave
+    bspc node -f {next,prev}.local.!hidden.window
+
+#############
+# Preselect #
+#############
+
+# Preselect the direction
+super + p ; super + {h,j,k,l}
+    bspc node -p {west,south,north,east}
+# Cancel the preselection for the focused desktop
+super + p ; super + Escape
+    bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+##############
+# Properties #
+##############
+
+# Toggle fullscreen
+super + f
+    bspc desktop -l next

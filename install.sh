@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 BAR="polybar"
 MISC="feh st pcmanfm stow slock xorg-xsetroot" # feh (wallpaper) st(terminal) pcmanfm(file explorer) stow(handle dotfiles linking), slock(lock screen)

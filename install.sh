@@ -1,7 +1,7 @@
 #!/bin/sh
 
 BAR="polybar"
-MISC="feh st pcmanfm stow slock xorg-xsetroot" # feh (wallpaper) st(terminal) pcmanfm(file explorer) stow(handle dotfiles linking), slock(lock screen)
+MISC="feh st pcmanfm stow slock xorg-xsetroot lxappearance-gtk3"
 LAUNCHER="rofi"
 COMPOSER="picom"
 NOTIFICATION="dunst"

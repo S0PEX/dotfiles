@@ -20,14 +20,14 @@ if echo "$MONITORS" | grep -q "BNQ GW2780"; then
 else
     echo "Applying Home layout..."
 
-    hyprctl keyword workspace 1,monitor:HDMI-A-2,default:true
-    hyprctl keyword workspace 2,monitor:HDMI-A-2
-    hyprctl keyword workspace 3,monitor:HDMI-A-2
-    hyprctl keyword workspace 4,monitor:HDMI-A-2
-    hyprctl keyword workspace 5,monitor:HDMI-A-2
-    hyprctl keyword workspace 6,monitor:HDMI-A-1,default:true
-    hyprctl keyword workspace 7,monitor:HDMI-A-1
-    hyprctl keyword workspace 8,monitor:HDMI-A-1
-    hyprctl keyword workspace 9,monitor:HDMI-A-1
-    hyprctl keyword workspace 10,monitor:HDMI-A-1
+    hyprctl keyword workspace 1,monitor:desc:HP Inc. HP X27i CNK0270K6T,default:true
+    hyprctl keyword workspace 2,monitor:desc:HP Inc. HP X27i CNK0270K6T
+    hyprctl keyword workspace 3,monitor:desc:HP Inc. HP X27i CNK0270K6T
+    hyprctl keyword workspace 4,monitor:desc:HP Inc. HP X27i CNK0270K6T
+    hyprctl keyword workspace 5,monitor:desc:HP Inc. HP X27i CNK0270K6T
+    hyprctl keyword workspace 6,monitor:desc:AOC 24G2W1G4 0x000002D4,default:true
+    hyprctl keyword workspace 7,monitor:desc:AOC 24G2W1G4 0x000002D4
+    hyprctl keyword workspace 8,monitor:desc:AOC 24G2W1G4 0x000002D4
+    hyprctl keyword workspace 9,monitor:desc:AOC 24G2W1G4 0x000002D4
+    hyprctl keyword workspace 10,monitor:desc:AOC 24G2W1G4 0x000002D4
 fi

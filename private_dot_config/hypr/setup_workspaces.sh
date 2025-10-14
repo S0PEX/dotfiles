@@ -5,7 +5,7 @@ MONITORS=$(hyprctl monitors all | grep "desc")
 
 if echo "$MONITORS" | grep -q "BNQ GW2780"; then
     echo "Applying Office layout..."
-
+    
     hyprctl keyword workspace 1,monitor:desc:BNQ GW2780 J9H0001301Q,default:true
     hyprctl keyword workspace 2,monitor:desc:BNQ GW2780 J9H0001301Q
     hyprctl keyword workspace 3,monitor:desc:BNQ GW2780 J9H0001301Q

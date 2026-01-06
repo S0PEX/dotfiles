@@ -35,6 +35,7 @@
         "volume",
         "network",
         "netstat",
+        "hypridle",
         "bluetooth",
         "systray",
         "clock",

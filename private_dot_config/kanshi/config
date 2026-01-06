@@ -7,3 +7,8 @@ profile office {
   output "BNQ GW2780 J9H0001301Q" mode 1920x1080@60.0 position 4582,2991
   output "Dell Inc. DELL P2723DE 8S0B714" mode 2560x1440@59.95 position 6502,2631
 }
+
+profile office2 {
+  output "HP Inc. HP E243m 3CQ14804RK" mode 1920x1080@60.0 position 3840,0
+  output "HP Inc. HP E233 3CQ94214JW" mode 1920x1080@60.0 position 1920,0
+}

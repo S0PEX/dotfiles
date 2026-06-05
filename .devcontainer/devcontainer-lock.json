@@ -1,0 +1,9 @@
+{
+  "features": {
+    "ghcr.io/prulloac/devcontainer-features/lua:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/prulloac/devcontainer-features/lua@sha256:716e06160055b24c1a4730146d8ce6b096b24a23d92aa8ba5dd4b3464225bcad",
+      "integrity": "sha256:716e06160055b24c1a4730146d8ce6b096b24a23d92aa8ba5dd4b3464225bcad"
+    }
+  }
+}

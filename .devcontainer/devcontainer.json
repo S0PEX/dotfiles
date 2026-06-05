@@ -1,0 +1,12 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:noble",
+	"features": {
+		"ghcr.io/prulloac/devcontainer-features/lua:1": {}
+	},
+	"mounts": [
+		"source=/run/current-system/sw/share/hypr/stubs/,target=/usr/share/hypr/stubs/,type=bind,consistency=cached"
+	]
+}

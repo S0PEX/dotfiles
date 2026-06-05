@@ -1,0 +1,48 @@
+[bar]
+scale = 0.75
+rounding = "sm"
+shadow = "drop"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+    "notifications",
+    "systray",
+]
+center = ["window-title"]
+right = [
+    "weather",
+    { name = "sound", modules = [
+    "microphone",
+    "volume",
+] },
+    { name = "networking", modules = [
+    "bluetooth",
+    "network",
+] },
+    { name = "misc", modules = ["clock"] },
+    "idle-inhibit",
+]
+
+[styling]
+scale = 1.0
+
+[modules.hyprland-workspaces]
+divider = ""
+app-icons-show = true
+
+[modules.weather]
+location = "Cologne"
+time-format = "24h"
+
+[wallpaper]
+transition-type = "random"
+transition-duration = 1.100000023841858
+cycling-enabled = true
+cycling-directory = "/home/s0pex/.config/wayle/wallpapers"
+cycling-mode = "shuffle"
+cycling-interval-mins = 20
+cycling-same-image = true

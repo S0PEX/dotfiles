@@ -15,6 +15,11 @@ local monitors = {
 		"BNQ BenQ XL2411Z H6E00533SL0",
 		"LG Electronics BK550Y 812NTUW0Y142"
 	},
+
+	office2 = {
+		"Hewlett Packard HP Z24i CN47310797",
+		"Dell Inc. DELL U2312HM KF87Y3B2B5VS"
+	},
 }
 
 --- Finds the best matching monitor setup based on the currently connected monitors.
@@ -59,19 +64,25 @@ local function get_active_monitors()
 	return best_setup
 end
 
----@type string[]
-local active = get_active_monitors()
+--- Applies workspace-to-monitor rules for the currently active monitor layout.
+local function apply_workspace_rules()
+	---@type string[]
+	local active = get_active_monitors()
 
--- Workspace rules
-for ws = 1, 10 do
-	---@type boolean
-	local is_first = (ws == 1 or ws == 6)
-	---@type string
-	local monitor = (ws <= 5) and active[1] or active[2]
+	-- Workspace rules
+	for ws = 1, 10 do
+		---@type boolean
+		local is_first = (ws == 1 or ws == 6)
+		---@type string
+		local monitor = (ws <= 5) and active[1] or active[2]
 
-	hl.workspace_rule({
-		workspace = tostring(ws),
-		monitor = "desc:" .. monitor,
-		default = is_first or false,
-	})
+		hl.workspace_rule({
+			workspace = tostring(ws),
+			monitor = "desc:" .. monitor,
+			default = is_first or false,
+		})
+	end
 end
+
+-- Re-apply workspace rules when a monitor becomes available.
+hl.on("monitor.added", apply_workspace_rules)

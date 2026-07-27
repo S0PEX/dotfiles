@@ -17,3 +17,8 @@ profile office3d {
   output "LG Electronics BK550Y 812NTUW0Y142" mode 1920x1080@60.0 position 3840,0
   output "BNQ BenQ XL2411Z H6E00533SL0" mode 1920x1080@60.0 position 1920,0
 }
+
+profile office4 {
+  output "Hewlett Packard HP Z24i CN47310797" mode 1920x1080@60.0 position 1920,0
+  output "Dell Inc. DELL U2312HM KF87Y3B2B5VS" mode 1920x1080@60.0 position 3840,0
+}
